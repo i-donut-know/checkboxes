@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: sans-serif;
+}
+
+.option {
+    display: block;
+    margin-bottom: 0.25em;
+}
+
+.check {
+    padding-left: 1.2em;
+}
+
+.check__input {
+    position: absolute;
+    appearance: none;
+}
+
+.check__box {
+    position: absolute;
+    margin-top: 0.2em;
+    margin-left: -1em;
+    width: 0.6em;
+    height: 0.6em;
+    border-radius: 0.05em;
+    background-color: #fff;
+    box-shadow: 0 0 0 0.1em #4A90E2;
+  }
+
+.check__input:checked + .check__box {
+    background-color: #4A90E2;
+    background-image: url(../images/check.svg);
+ 
+}
+
+.check__input:focus + .check__box {
+    box-shadow: 
+        0 0 0 0.1em #4A90E2,
+        0 0 0 0.2em #7ED321;
+}
+
+.check__input:disabled + .check__box {
+    box-shadow: 0 0 0 0.1em #9b9b9b;
+}
+
+.check__input:checked:disabled + .check__box {
+    background-color: #9b9b9b;
+}
